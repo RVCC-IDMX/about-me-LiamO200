@@ -65,8 +65,9 @@ header{
     font-size:3em;
     padding:.25em;
     line-height:.65;
-    border:1px solid black:
+    border:1px solid black;
 }
+/* tablet size */
 @media screen and (min-width: 60cm){
     figure{
         display: grid;
@@ -79,4 +80,27 @@ header{
         font-size: 4rem;
         margin-left: 1rem;
     }
+    figure img{
+        width:100%;
+    }
+    #lit div{
+        max-width: 100%;
+        columns: 20rem;
+    }
+}
+/*large screen size*/
+@media screen and (min-wdth:100cm){
+#gallery{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+hr{
+    display:none;
+}
+#gallery h2{
+    grid-column:1/-1;
+}
+figure{
+    display:block;
+}
 }
