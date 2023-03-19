@@ -4,9 +4,13 @@ body {
     color:#FAE50C;
 }
 
-h1,h2,h3,h4,h5,h6{
-    font-family:"Martel"
+h2,h3,h4,h5,h6{
+    font-family:"Martel";
     font-size:30pt;
+    text-align:center;
+}
+h1{
+    font-size:20pt;
 }
 
 header{
@@ -26,4 +30,8 @@ header{
 
 #bio{
     text-align:center;
+}
+
+#hobbies ul li:nth-child(even){
+    color:#FAE50C;
 }
