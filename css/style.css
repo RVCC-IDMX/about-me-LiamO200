@@ -16,7 +16,7 @@ h1{
 header{
     text-align:center
 }
-
+/*Hero Section*/
 #hero,footer{
     color:#FA973E;
     background-color:#2562FA;
@@ -27,11 +27,23 @@ header{
 #hero_img{
     width:300px;
 }
-
+/*Bio Section*/
 #bio{
     text-align:center;
 }
-
+/* hobbies */
 #hobbies ul li:nth-child(even){
     color:#FAE50C;
+}
+/*photo gallery*/
+#gallery{
+    border: 2px solid #FA973E;
+}
+
+#gallery img{
+    max-width: 100%;
+}
+
+#gallery figure{
+    text-align:center;
 }
