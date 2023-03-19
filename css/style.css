@@ -1,0 +1,29 @@
+body {
+    font-family: 'Martel', serif;
+    background-color:#6432FA;
+    color:#FAE50C;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family:"Martel"
+    font-size:30pt;
+}
+
+header{
+    text-align:center
+}
+
+#hero,footer{
+    color:#FA973E;
+    background-color:#2562FA;
+    border:2px solid #FA973E;
+    text-align:center;
+    padding:10px;
+}
+#hero_img{
+    width:300px;
+}
+
+#bio{
+    text-align:center;
+}
