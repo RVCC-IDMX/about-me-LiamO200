@@ -4,13 +4,10 @@ body {
     color:#FAE50C;
 }
 
-h2,h3,h4,h5,h6{
+h1,h2,h3,h4,h5,h6{
     font-family:"Martel";
     font-size:30pt;
     text-align:center;
-}
-h1{
-    font-size:20pt;
 }
 
 header{
@@ -46,4 +43,19 @@ header{
 
 #gallery figure{
     text-align:center;
+}
+/*Literature*/
+#lit{
+    border:2px solid #FA973E;
+    margin-bottom:2rem;
+}
+/*dropcaps*/
+
+#lit div p:first-letter {
+    color: #FA973E;
+    float:left;
+    font-size:3em;
+    padding:.25em;
+    line-height:.65;
+    border:1px solid black:
 }
