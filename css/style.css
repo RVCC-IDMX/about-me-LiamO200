@@ -1,106 +1,136 @@
 body {
     font-family: 'Martel', serif;
-    background-color:#6432FA;
-    color:#FAE50C;
+    background-color: #6432FA;
+    color: #FAE50C;
 }
 
-h1,h2,h3,h4,h5,h6{
-    font-family:"Martel";
-    font-size:30pt;
-    text-align:center;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Martel";
+    font-size: 30pt;
+    text-align: center;
 }
-h2{
+
+h2 {
     margin: .1em;
 }
 
-header{
-    text-align:center
+header {
+    text-align: center
 }
+
 /*Hero Section*/
-#hero,footer{
-    color:#FA973E;
-    background-color:#2562FA;
-    border:2px solid #FA973E;
-    text-align:center;
-    padding:10px;
+#hero,
+footer {
+    color: #FA973E;
+    background-color: #2562FA;
+    border: 2px solid #FA973E;
+    text-align: center;
+    padding: 10px;
 }
-#hero_img{
-    width:300px;
+
+#hero_img {
+    width: 300px;
+}
+
+/* Video */
+iframe{
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    border-radius: 5px;
 }
 /*Bio Section*/
-#bio{
-    text-align:center;
+#bio {
+    text-align: center;
 }
+
 /* hobbies */
-#hobbies{
-    display:flex;
-    flex-direction:column;
-    align-items:center;
+#hobbies {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
-#hobbies ul li:nth-child(even){
-    color:#FAE50C;
+
+#hobbies ul li:nth-child(even) {
+    color: #FAE50C;
 }
+
 /*photo gallery*/
-#gallery{
+#gallery {
     border: 2px solid #FA973E;
 }
 
-#gallery img{
+#gallery img {
     max-width: 100%;
 }
 
-#gallery figure{
-    text-align:center;
+#gallery figure {
+    text-align: center;
 }
+
 /*Literature*/
-#lit{
-    border:2px solid #FA973E;
-    margin-bottom:2rem;
+#lit {
+    border: 2px solid #FA973E;
+    margin-bottom: 2rem;
 }
+
 /*dropcaps*/
 
 #lit div p:first-letter {
     color: #FA973E;
-    float:left;
-    font-size:3em;
-    padding:.25em;
-    line-height:.65;
-    border:1px solid black;
+    float: left;
+    font-size: 3em;
+    padding: .25em;
+    line-height: .65;
+    border: 1px solid black;
 }
+
 /* tablet size */
-@media screen and (min-width: 60cm){
-    figure{
+@media screen and (min-width: 60em) {
+    figure {
         display: grid;
         grid-template-columns: 2fr 1fr;
     }
-    figcaption{
-        display:flex;
-        justify-content:center;
-        align-items:center;
+
+    figcaption {
+        display: flex;
+        justify-content: center;
+        align-items: center;
         font-size: 4rem;
         margin-left: 1rem;
     }
-    figure img{
-        width:100%;
+
+    figure img {
+        width: 100%;
     }
-    #lit div{
+
+    #lit div {
         max-width: 100%;
         columns: 20rem;
     }
 }
+
 /*large screen size*/
-@media screen and (min-wdth:100cm){
-#gallery{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-}
-hr{
-    display:none;
-}
-#gallery h2{
-    grid-column:1/-1;
-}
-figure{
-    display:block;
-}
+@media screen and (min-width: 100em){
+    #gallery {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    hr {
+        display: none;
+    }
+
+    #gallery h2 {
+        grid-column: 1/-1;
+    }
+
+    figure {
+        display: block;
+    }
 }
