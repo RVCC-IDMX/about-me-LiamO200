@@ -89,6 +89,58 @@
                     companions whispered to another the line from Burger's "Lenore:--</p>
             </div>
         </article>
+        <section id="contact">
+            <h2>Contact Us:</h2>
+            <form id="contactForm" name="contactForm" method="post" data-netlify="true">
+                <feildset>
+                    <legend>Contact Form</legend>
+                    <div id="formElements">
+                    <!--Name-->
+                    <label for="name">Name (required)</label>
+                    <input type="text" id="name" name="name">
+
+                    <!--Email-->
+                    <label for="email">Email (required)</label>
+                    <input type="text" id="email" name="email">
+                    <!--Phone-->
+                    <label for="phone">Name (optional)</label>
+                    <input type="tel" id="phone" name="phone">
+                    <!--Phone Type-->
+                    <label for="phonetype">Phone type (optional)</label>
+                    <select id="phonetype">
+                        <option value="">Select phone type</option>
+                        <option value="Mobile">Mobile</option>
+                        <option value="Work">Work</option>
+                        <option value="Home">Home</option>
+                    </select>
+                    <!--Message-->
+                    <label for="message">Message (optional)</label>
+                    <textarea id="message" name="message" rows="8" placeholder="Message."></textarea>
+                    <!--Reply-->
+                    <feildset>
+                        <legend>Would you like a reply?</legend>
+
+                        <ul>
+                            <li>
+                                <input type="radio" id="message-yes" name="reply" value="Yes a reply please.">
+                                Yes a reply would be nice.
+                                <label for="message-yes">Yes a reply
+                                    would be nice.</label>
+                                </label>
+                            </li>
+                            <li>
+                                <input type="radio" id="message-no" name="reply" value="No reply please."checked>
+                                No, thanks.
+                                <label for="message-yes">No, thanks.</label>
+                            </li>
+                        </ul>
+                    </feildset>
+                    <!--Submit-->
+                    <button type="submit">Send</button>
+                    </div>
+                </feildset>
+            </form>
+        </section>
     </main>
     <h1>“Technology is cool, but you've got to use it as opposed to letting it use you.”</h1>
     <p>- Prince</p>
