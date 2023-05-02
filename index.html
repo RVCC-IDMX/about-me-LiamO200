@@ -2,10 +2,16 @@
 <html lang="en">
 
 <head>
+    <style>
+        body{
+            background-image:url('trees.jpg')
+        }
+    </style>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Me</title>
+    <link rel="icon" type="image/png" sizes="96x96" href="img/favicon.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Martel:wght@200&display=swap" rel="stylesheet">
@@ -14,12 +20,15 @@
 </head>
 
 <body>
+    <!--Navbar-->
     <header>
         <nav class="navbar">
             <div class="logo">
-                <img src="img/logo-96X96.svg" alt="Blue origami logo">
-                <h1>Web Dev I</h1>
+                <img src="img/favicon-96x96.png" alt="LO Monogram logo">
+                <h1> Web Dev I</h1>
             </div>
+            <input type="checkbox" id="checkbox_toggle">
+            <label for="checkbox_toggle" class="hamburger">&#9776;</label>
             <div class="navbar-links">
                 <li><a href="#bio">Bio</a></li>
                 <li><a href="#gallery">Gallery</a></li>
@@ -31,13 +40,15 @@
     </header>
 
     <main>
+        <!--Header-->
         <section id="hero">
             <img src="img/avataaars.png" alt="avatar picture of me">
             <div>
-                <p>liam o'reilly</p>
+                <p>Liam O'Reilly</p>
                 <p>Bound Brook, NJ</p>
             </div>
         </section>
+        <!--Video embed-->
         <section id="myVideo">
             <h2>A Short Video</h2>
             <iframe width="560" height="315" src="https://www.youtube.com/embed/VebDd1zxZiY?controls=0"
@@ -45,60 +56,131 @@
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 allowfullscreen></iframe>
         </section>
+        <!--Biography-->
         <section id="bio">
             <h2>Biography:</h2>
-            <p>I want to be...</p>
-            <p>More proficient in what i'm intrested in learning about</p>
-
+            <img style="float:left" src="img/liam.jpg" alt="Picture of me" class="liam" width="300" height="400"> <p><b> I’m Liam, I’m interested in art of all mediums and especially plushies. I really appreciate the
+                history and lore behind things and it leads me to gain a deeper appreciation for even the little things
+                in life. I’m a student currently studying computer programming by day and usually working on personal
+                projects and studies at night. I’m a pretty muted and reclusive person, until you get to know me and I
+                open up very genuinely to anyone who is willing to lend me an ear (don’t let me ramble on however).</b></p>
+        
         </section>
+        <!--Hobbies-->
         <section id="hobbies">
             <h2>Hobbies:</h2>
             <ul>
-                <li>Fashion</li>
-                <li>Virtual Pets</li>
-                <li>Plush collecting</li>
+                <li><b>I love fashion. I believe there’s so many great stories and philosophies to follow in a medium that
+                    most of the population sees as gaudy and over pretentious. The world’s basic interaction of it as a
+                    simple necessity opens up a realm of possibilities for people to go above and beyond to express
+                    themselves.</b></li>
+                <li><b>I love plushies, it’s quickly become my favorite kind of collectible with really deep and
+                    interesting mythos behind some of the objects I own. There’s an unexplainable lure I have to find an
+                    image of a plush at 3am off a random merch index site, and scouring the web in multiple different
+                    languages to find an unlisted listing for it being last interacted with in 2005.</b></li>
+                <li><b> is an integral part of my life, I can't do most things without it in my ears. I love finding
+                    very odd and obscure songs that I probably couldn’t play for anyone besides me and most days end up
+                    listening to some tunes that would probably turn more than a few heads if it was played for anyone
+                    besides a select group of people. It’s not like the most popular tunes don’t scratch the itch either
+                    though, anything works for me as long as I'm feeling some connection to it. </b></li>
                 <li>ect...</li>
             </ul>
         </section>
+        <!--Gallery-->
         <section id="gallery">
             <h2>Photo Gallery</h2>
             <hr>
             <figure>
-                <img src="vpet-640w.jpg" alt="Tamagotchi pet picture">
+                <img src="img/vpet-640w.jpg" alt="Tamagotchi pet picture">
                 <figcaption>Supreme tamagotchi that released a few days ago</figcaption>
             </figure>
             <hr>
             <figure>
-                <img src="clothes-640w.jpg" alt="Picture of my clothes">
+                <img src="img/clothes-640w.jpg" alt="Picture of my clothes">
                 <figcaption>Picture of my clothes in my closet</figcaption>
             </figure>
             <hr>
             <figure>
-                <img src="tricky-640w.jpg" alt="tricky the clown plush">
+                <img src="img/tricky-640w.jpg" alt="tricky the clown plush">
                 <figcaption>Picture of my tricky the clown plush from madness combat</figcaption>
             </figure>
         </section>
+        <!--Blog Section-->
         <article id="lit">
-            <h2>Bram Stoker's Dracula</h2>
+            <h2>Blog : </h2>
             <div>
-                <p>There is no carriage here. The Herr is not expected after all. He will now come on to Bukovina, and
-                    return to-morrow or the next day; better the next day." Whilst he was speaking the horses began to
-                    neigh and snort and plunge wildly, so that the driver had to hold them up. Then, amongst a chorus of
-                    screams from the peasants and a universal crossing of themselves, a calèche, with four horses, drove
-                    up behind us, overtook us, and drew up beside the coach. I could see from the flash of our lamps, as
-                    the rays fell on them, that the horses were coal-black and splendid animals. They were driven by a
-                    tall man, with a long brown beard and a great black hat, which seemed to hide his face from us. I
-                    could only see the gleam of a pair of very bright eyes, which seemed red in the lamplight, as he
-                    turned to us. He said to the driver:--</p>
+                <h3>CSS Animation, A Brief History</h3>
+                <p>CSS Animation is a way for developers to animate elements of their HTML documents and spring them to
+                    life. When it was introduced in CSS3 in 2009 though, it wasn’t beloved by all. Many people believe
+                    CSS Animation lacks the flexibility and functionality of Js Animation which is powered by
+                    javascript. CSS Animation is able to modify the beginning and end states of an object, whilst Js
+                    Animation lets you get in between awarding the user more creative freedoms. This wasn’t it’s only
+                    controversy however, many believe it’s existence at all was an elaborate by apple to sidestep adobe
+                    flash. Flash was the predominant method of animation for the web for the longest time, but Apple
+                    wouldn’t let it function on IOS. IOS is one of the main ways people access the internet now, and
+                    it’s rising tide spelled out sure destruction for Adobe seeing as Steve Jobs himself slandered the
+                    company and their product by saying flash saps battery power, and it’s the #1 reason why mac
+                    products crash. They framed flash as being a “relic of the past”, and openly welcomed CSS Animation
+                    to function on safari. Adobe retorted refuting their claims saying it was a “smokescreen”. Jobs
+                    acknowledged their strained and drifting relationship saying that although adobe claims their
+                    rejection of flash was because of their restrictive and exclusionary business tactics, it’s the
+                    opposite and they’re guilty of exactly what they’re accusing. Being beholden to the whims of another
+                    third party company is indeed a risky endeavor. CSS animation isn’t reliant on the licenses and
+                    random decisions of adobe, which many may cite as the reason why it could be perceived it prevailed.
+                    In 2020 flash was discontinued, leaving a great sea of the internet a barren wasteland of errors.
+                    The reality is, these complicated stories of endless development wars seem to have no end. Before Js
+                    Animation there was Synchronized Multimedia Integration Language or SMIL which users utilized to
+                    animate elements. Every iteration in the world will be phased out by its successor whether we like
+                    it or not, and with the current trajectory of the internet the only power we have is to hope and
+                    pray whatever is next can be translated and archived properly to function on whatever is next. With
+                    the plethora of services flash provided, websites utilizing it either had to uproot their entire
+                    frameworks with programs to adapt their existing code, or scrap what they had entirely. This is
+                    something CSS Animation is less vulnerable to, but will inevitably one day fall victim to. Once the
+                    world is hooked up through eyeball projector monitor holograms sending data through neural link
+                    brain chips, CSS Animation will be a whisper in the wind spoken only by those who remember a day
+                    where little images squished and squashed happily along webpages, a simpler age. Here’s an example
+                    of CSS Animation right now! I’ve placed a little cat here for you to enjoy, before the netlify
+                    servers pitter out into the ethos with it’s bits and bytes dissipating and drifting through
+                    cyberspace, holding fractured memories of what once were 1s and 0s that played the very animation
+                    you were looking at now. Past then when we are both long gone, only nomad vagabonds who traverse a
+                    barren wasteland will access my hard drive with the smallest bits of recoverable memory will be able
+                    to piece it together past the thousands of flash animations i’ve downloaded and wrote it over with.
+                    Many may believe this endless crawl of time, every iteration replacing another is a sad nihilistic
+                    view of the world. But travel to the quietest mountaintops, and Buddhist monks will enlighten you
+                    that the law of impermanence is a beautiful thing. When the inevitable heat death of the universe
+                    envelops the final atom of the last brain in a jar containing the final computer programmer to ever
+                    remember CSS animation, it will finally be at peace. This little bouncing cat will reincarnate into
+                    something beyond our mortal comprehension, and the circle of its very life conceptually will travel
+                    again.</p>
+            </div>
+            </div>
+            <img src="img/ginger.jpg" alt="picture of my cat ginger" id="ginger">
+            <style>
+                #ginger {
+                    animation: animate 0.5s infinite;
+                    align-items: center;
+                }
 
-                <p>You are early to-night, my friend." The man stammered in reply:--</p>
+                @keyframes animate {
 
-                <p>The English Herr was in a hurry," to which the stranger replied:--</p>
+                    from,
+                    to {
+                        transform: scale(1, 1);
+                    }
 
-                <p>That is why, I suppose, you wished him to go on to Bukovina. You cannot deceive me, my friend; I
-                    know too much, and my horses are swift." As he spoke he smiled, and the lamplight fell on a
-                    hard-looking mouth, with very red lips and sharp-looking teeth, as white as ivory. One of my
-                    companions whispered to another the line from Burger's "Lenore:--</p>
+                    25% {
+                        transform: scale(0.9, 1.1);
+                    }
+
+                    50% {
+                        transform: scale(1.1, 0.9);
+                    }
+
+                    75% {
+                        transform: scale(0.95, 1.05);
+                    }
+                }
+            </style>
             </div>
         </article>
         <section id="contact">
@@ -107,58 +189,69 @@
                 <feildset>
                     <legend>Contact Form</legend>
                     <div id="formElements">
-                    <!--Name-->
-                    <label for="name">Name (required)</label>
-                    <input type="text" id="name" name="name">
+                        <!--Name-->
+                        <label for="name">Name (required)</label>
+                        <input type="text" id="name" name="name">
 
-                    <!--Email-->
-                    <label for="email">Email (required)</label>
-                    <input type="text" id="email" name="email">
-                    <!--Phone-->
-                    <label for="phone">Name (optional)</label>
-                    <input type="tel" id="phone" name="phone">
-                    <!--Phone Type-->
-                    <label for="phonetype">Phone type (optional)</label>
-                    <select id="phonetype">
-                        <option value="">Select phone type</option>
-                        <option value="Mobile">Mobile</option>
-                        <option value="Work">Work</option>
-                        <option value="Home">Home</option>
-                    </select>
-                    <!--Message-->
-                    <label for="message">Message (optional)</label>
-                    <textarea id="message" name="message" rows="8" placeholder="Message."></textarea>
-                    <!--Reply-->
-                    <feildset>
-                        <legend>Would you like a reply?</legend>
+                        <!--Email-->
+                        <label for="email">Email (required)</label>
+                        <input type="text" id="email" name="email">
+                        <!--Phone-->
+                        <label for="phone">Name (optional)</label>
+                        <input type="tel" id="phone" name="phone">
+                        <!--Phone Type-->
+                        <label for="phonetype">Phone type (optional)</label>
+                        <select id="phonetype">
+                            <option value="">Select phone type</option>
+                            <option value="Mobile">Mobile</option>
+                            <option value="Work">Work</option>
+                            <option value="Home">Home</option>
+                        </select>
+                        <!--Message-->
+                        <label for="message">Message (optional)</label>
+                        <textarea id="message" name="message" rows="8" placeholder="Message."></textarea>
+                        <!--Reply-->
+                        <feildset>
+                            <legend>Would you like a reply?</legend>
 
-                        <ul>
-                            <li>
-                                <input type="radio" id="message-yes" name="reply" value="Yes a reply please.">
-                                Yes a reply would be nice.
-                                <label for="message-yes">Yes a reply
-                                    would be nice.</label>
-                                </label>
-                            </li>
-                            <li>
-                                <input type="radio" id="message-no" name="reply" value="No reply please."checked>
-                                No, thanks.
-                                <label for="message-yes">No, thanks.</label>
-                            </li>
-                        </ul>
-                    </feildset>
-                    <!--Submit-->
-                    <button type="submit">Send</button>
+                            <ul>
+                                <li>
+                                    <input type="radio" id="message-yes" name="reply" value="Yes a reply please.">
+                                    Yes a reply would be nice.
+                                    <label for="message-yes">Yes a reply
+                                        would be nice.</label>
+                                    </label>
+                                </li>
+                                <li>
+                                    <input type="radio" id="message-no" name="reply" value="No reply please." checked>
+                                    No, thanks.
+                                    <label for="message-yes">No, thanks.</label>
+                                </li>
+                            </ul>
+                        </feildset>
+                        <!--Submit-->
+                        <button type="submit">Send</button>
                     </div>
                 </feildset>
             </form>
         </section>
     </main>
+    <p>Did You Know : Vote For Kennedy by Frank Sinatra is a public domain song!
+        It was published by the United States Goverment, and no copyright was claimed.
+    </p>
+    <audio controls="" autoplay="" loop="" src="/Frank Sinatra - ＂High Hopes＂ with Jack Kennedy (1960).mp3"></audio>
     <h1>“Technology is cool, but you've got to use it as opposed to letting it use you.”</h1>
     <p>- Prince</p>
     <footer>
-        ©2023 - Liam O'Reilly
+        <a href="https://bruh.soy/">press this</a>
+        | ©2023 - Liam O'Reilly | 
+        <a href="https://github.com/RVCC-IDMX/about-me-LiamO200">Github</a>
     </footer>
+    <style type="text/css">
+        body {
+            cursor: url('data:image/x-icon;base64,AAACAAEAICAAAAAAAACoEAAAFgAAACgAAAAgAAAAQAAAAAEAIAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAATAAAAiAAAALsAAAC6AAAAegAAAAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD///8A////AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACYAAAD8AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD9AAAAMwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP///wD///8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACwAAAD/AAAA/wgVGP9Y4vz/W+f//1jh//9X3v//V9///1nj//9b6f//WuX8/wweI/8AAAD/AAAA/wAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA////AP///wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACkAAAD/AAAA/1nj/f9X3v7/XOn//xpDTP8AAAD/AAAA/wAAAP8AAAD/AAAA/yNaZv9d7v//V97+/1fe/v9Z4/z/AAAA/wAAAP8AAAAYAAAAAAAAAAAAAAAAAAAAAAAAAAD///8A////AAAAAAAAAAAAAAAAAAAAAAAAAABbAAAA/xY3P/9Y4P//V93+/0Suwf8AAAD/c0qs/+HA/f/evfr/3b36/+C//P/ox///spjD/wAAAP8we4r/V9/+/1fe/v9Y4f//FDU8/wAAAP8AAAA8AAAAAAAAAAAAAAAAAAAAAP///wD///8AAAAAAAAAAAAAAAAAAAAAMQAAAP8rbnz/V93+/1fd/v8XOkP/AwEH/0cZjP89EIH/5MT9/929+f/dvfn/3b35/929+f/dvfn/3r76/0A3SP8AAAD/XOz//1fe/v9X3f7/IVNf/wAAAP8AAAAoAAAAAAAAAAAAAAAA////AP///wAAAAAAAAAAAAAAAAAAAAD/HUpV/1fd/v9X3f7/FjlB/wYCDP9EGIb/RBiG/0QYhv9mPZ//3Lz5/929+f/dvfn/3b35/929+f/dvfn/3r76/z8aeP8AAAD/XOz//1fe/v9X3f7/DSEn/wAAAP8AAAAAAAAAAAAAAAD///8A////AAAAAAAAAAAAAAAAfwAAAP9X3v7/V97+/0e3zv8AAAD/RRiH/0QYhv9EGIb/RBiG/0QYhv9dM5n/5sf//9y8+f/dvfn/3Lz5/+TE/v87Dn//RBiG/y0QWP8AAAH/V93+/1fe/v9Z4///AAAA/wAAAIMAAAAAAAAAAP///wD///8AAAAAAAAAAAAAAAD/XvD//1fe/v9a6P//AAAA/0kakf9EGIb/RBiG/0QYhv9EGIb/RBiG/0QYhv9AE4P/RBiG/2lBov9PJY//Ow+A/0QYhv9EGIb/RBiF/wABAf9V2fD/V97+/1fe/v9b6/7/AAAA/wAAAAAAAAAA////AP///wAAAAAAAAAAtQAAAP9X3v7/V97+/zmTqP8iDEX/RBiG/0QYhv9EGIb/RBiG/0QYhv9EGIb/RBiG/0QYhv9EGIb/RBiG/0QYhv9EGIb/RBiG/0QYhv9EGIb/PxZ9/xQyOf9X3v7/V97+/1fe/v8AAAD/AAAAoQAAAAD///8A////AAAAAAAAAAD/IFFc/1fe/v9X3v//AAAA/0gZjf9EGIb/RBiG/0QYhv9EGIb/RBiG/0QYhv9EGIb/RBiG/0QYhv9EGIb/RBiG/0QYhv9EGIb/RBiG/0QYhv9JGo//AAEB/1fd/v9X3v7/V97+/x5LVf8AAAD/AAAAAP///wD///8AAAAAMAAAAP9b6v//V97+/1nj+/8IAw//RBiG/0QYhv9EGIb/RBiG/0QYhv9EGIb/RBiG/0QYhv9EGIb/RBiG/0QYhv9EGIb/RBiG/0QYhv9EGIb/RBiG/0gajv8CBQb/V93+/1fe/v9X3v7/XOv//wAAAP8AAAAn////AP///wAAAACdAAAA/1ff//9Z5P//R7XI/xkJMf89Fnn/PRZ5/z0Wef89Fnn/PRZ5/z0Wef89Fnn/PRZ5/z0Wef89Fnn/PRZ5/z0Wef89Fnn/PRZ5/z0Wef89Fnn/MBFg/yFSXP9X3v7/V97+/1fe/v9Z4v//AAAA/wAAAJb///8A////AAAAAO8QKC//V97+/zWFmP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/WeL5/1fe/v9X3v7/V97+/1fe/v8AAQL/AAAA7v///wD///8AAAAA/x9QXP9X3v7/V97+/1fe/v9X3v7/V97+/1fe/v9X3v7/V97+/1fe/v9X3v7/V97+/1fe/v9X3v7/V97+/1fe/v9X3v7/V97+/1fe/v9X3v7/V97+/1fe/v9X3v7/V97+/1fe/v9X3v7/V93+/w0jKf8AAAD/////AP///wAAAAD/JV1r/1fe/v9X3v7/V97+/1fe/v9X3v7/V97+/1fe/v9X3v7/V97+/1fe/v9X3v7/V97+/1fe/v9X3v7/V97+/1fe/v9X3v7/V97+/1fe/v9X3v7/V97+/1fe/v9X3v7/V97+/1fe/v9X3v7/Ei82/wAAAP////8A////AAAAAP8aQ03/V93+/wYPEf8HERP/BxET/wcRE/8HERP/BxET/wcRE/8/oLX/V97+/1fe/v9X3v7/V97+/xMwOf8HERP/BxET/wcRE/8HERP/BxET/wcRE/8HERP/CBQX/1fd/v9X3v7/V97+/1fe/v8RKjH/AAAA/////wD///8AAAAA2AoZHv9b5v//dHR0/////////////////////////////////wsbH/9X3v7/V97+/1fe/v9X3///AAAA//////////////////////////////////////8AAAD/W+n//1fe/v9X3v7/V93+/wMICv8AAADX////AP///wAAAABqAAAA/17w//+dnZ3/////////////////////////////////AAAA/1fe/v9X3v7/V97+/1ff//8AAAD//////////////////////////////////////wAAAP9d7f//V97+/1fe/v9Z4v//AAAA/wAAAGz///8A////AAAAAAAAAAD/WOP7/wAAAP8AAAD/AAAA/////////////////6mpqf8RLDP/V97+/1fe/v9X3v7/V97+/wAAAP8AAAD/AAAA/wAAAP////////////////+BgYH/AAAA/1jf//9X3v7/V97+/1Xa9f8AAAD/AAAAAP///wD///8AAAAAAAAAAP8JFxv/AAAA/wAAAP8AAAD/////////////////AAAA/1TX6/9X3v7/V97+/1fe/v9X3v7/Noqb/wAAAP8AAAD/AAAA/////////////////wAAAP8tcYH/V97+/1fe/v9X3v7/BxEV/wAAAP8AAAAA////AP///wAAAAAAAAAAIgAAAP8LHiT/AAAA/wAAAP////////////////8BAQL/V93+/1fe/v9X3v7/V97+/1fe/v9X3/7/AAAA/wAAAP8AAAD/////////////////AAAA/1nj//9X3v7/V97+/1ff//8AAAD/AAAAHwAAAAD///8A////AAAAAAAAAAAAAAAA/0CltP8CBQf/BwcH/1JSUv8KCgr/AAAA/1zo//9X3v7/V97+/1fe/v9X3v7/V97+/1fe/v9b5///BxEU/wIAAP9XV1f/Dg4O/wQKDP9b6f//V97+/1fe/v9X3v7/LnaG/wAAAP8AAAAAAAAAAP///wD///8AAAAAAAAAAAAAAAAAAAAA/17w//9Z4/n/UM3n/1rl/P9X3v7/V97+/1fe/v9X3v7/V97+/1fe/v9X3v7/V97+/1fe/v9X3f7/XOz//1LQ6P9c7P//V93+/1fe/v9X3v7/V97+/1zp//8AAAD/AAAAAAAAAAAAAAAA////AAAAAP8AAAAAAAAAAAAAAAAAAAD/AAAA/1zt//9X3v7/V97+/1fe/v9X3v7/V97+/1fe/v9X3v7/V97+/1fe/v9X3v7/V97+/1fe/v9X3v7/V97+/1fe/v9X3v7/V97+/1fe/v9e7v//AAAA/wAAAP8AAAAAAAAAAAAAAAD///8AAAAA/wAAAP8AAAAAAAAAAAAAAAAAAAD/AAAA/17w//9X3v7/V97+/1fe/v9X3v7/V97+/1fe/v9X3v7/V97+/1fe/v9X3v7/V97+/1fe/v9X3v7/V97+/1fe/v9X3v7/XvH//wAAAP8AAAD/AAAAAAAAAAAAAAAAAAAAAP///wAAAAD/AOr//wAAAP8AAAAAAAAAAAAAAAAAAAD/AAAA/0/K2/9X3v7/V97+/1fe/v9X3v7/V97+/1fe/v9X3v7/V97+/1fe/v9X3v7/V97+/1fe/v9X3v7/V93+/0Wxwf8AAAD/AAAA/wAAAAAAAAAAAAAAAAAAAAAAAAAA////AAAAAP8A6v//AOr//wAAAP8AAAAAAAAAAAAAAAAAAABFAAAA/wAAAP8nZW//XOv//1fd/v9X3v7/V97+/1fe/v9X3v7/V97+/1fe/v9X3v7/Xez//xY6Qv8AAAD/AAAA/wAAADIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD///8AAAAA/wDq//8A6v//AOr//wAAAP8AAAAAAAAAAAAAAAAAAAAAAAAAgwAAAP8AAAD/BhAT/ypseP9JudD/Tcbf/0m60f8/oLL/H09Z/wEBAv8AAAD/AAAA/wAAAKgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP///wAAAAD/AOr//wDq//8A6v//AOr//wAAAP8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAACcAAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA+QAAADIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA////AAAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP////8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A///////8f///4Af//4AB//4AAH/8AAA/+AAAH/AAAA/wAAAH4AAAB8AAAAPAAAADwAAAA4AAAAGAAAABgAAAAYAAAAGAAAABgAAAAcAAAAPAAAADwAAAA+AAAAfgAAAH8AAAD3AAAA84AAAfHAAAPw8AAP8HgAH/A/AP/wH///8='), auto;
+        }
+    </style>
 </body>
 
 </html>
