@@ -1,6 +1,5 @@
 body {
     font-family: 'Martel', serif;
-    background-color: #6432FA;
     color: #FAE50C;
 }
 
@@ -26,9 +25,9 @@ header {
 /*Hero Section*/
 #hero,
 footer {
-    color: #FA973E;
+    color: #FAE50C;
     background-color: #2562FA;
-    border: 2px solid #FA973E;
+    border: 2px solid #FAE50C;
     text-align: center;
     padding: 10px;
 }
@@ -47,13 +46,19 @@ iframe{
 /*Bio Section*/
 #bio {
     text-align: center;
+    align-items:center;
 }
 
+.liam{
+}
 /* hobbies */
 #hobbies {
+    border: 2px solid #FAE50C;
+    background-color: #6432FA;
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 2rem;
 }
 
 #hobbies ul li:nth-child(even) {
@@ -62,11 +67,17 @@ iframe{
 
 /*photo gallery*/
 #gallery {
-    border: 2px solid #FA973E;
+    border: 2px solid #FAE50C;
+    background-color: #6432FA;
+    margin-bottom: 2rem;
 }
 
 #gallery img {
     max-width: 100%;
+}
+
+img:hover{
+    transform:scale(1.1);
 }
 
 #gallery figure {
@@ -75,14 +86,15 @@ iframe{
 
 /*Literature*/
 #lit {
-    border: 2px solid #FA973E;
+    background-color: #6432FA;
+    border: 2px solid #FAE50C;
     margin-bottom: 2rem;
 }
 
 /*dropcaps*/
 
 #lit div p:first-letter {
-    color: #FA973E;
+    color: #FAE50C;
     float: left;
     font-size: 3em;
     padding: .25em;
@@ -149,14 +161,14 @@ iframe{
 }
 
 fieldset {
-    border: 2px solid #FA973E;
+    border: 2px solid #FAE50C;
     margin-top:1em;
     margin-bottom:1em;
     border-radius:2rem;
 }
 
 legend {
-    background-color: #FA973E;
+    background-color: #FAE50C;
     color: #2562FA;
     padding:.5em;
 }
@@ -176,9 +188,9 @@ legend {
 }
 
 #contact button {
-    background-color: #FA973E;
-    color: #2562FA;
-    border:1px solid #FA973E;
+    background-color: #2562FA;
+    color: #FAE50C;
+    border:1px solid #FAE50C;
     max-width:400px;
     width:50%;
     justify-self: center;
